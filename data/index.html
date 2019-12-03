@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Example</title>
+</head>
+<body>
+    <main>
+        <h1>My first website</h1>
+        <p class="firstParagraphh">Hello, Welcome to my website...</p>
+        <div class="myImage">
+            <img src="https://picsum.photos/200/300" alt="Random Image">
+        </div>
+    </main>
+    <section class="container">
+        <div class="myTable">
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Michael Kamau</td>
+                    <td>20</td>
+                    <td>Nairobi</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Cetric Okola</td>
+                    <td>24</td>
+                    <td>Kisumu</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Margaret Mwaura</td>
+                    <td>23</td>
+                    <td>Thika</td>
+                </tr>
+            </table>
+        </div>
+        <div class="itemList">
+            <h2>Today's Tasks</h2>
+            <ul>
+                <li>HTML</li>
+                <li>Installing Vagrant</li>
+                <li>Configuring NGINX</li>
+                <li>Running Virtualhost</li>
+            </ul>
+        </div>
+        <div class="myForm">
+            <form>
+                <input type="text" placeholder="Enter your name">
+                <br>
+                <input type="text" placeholder="Enter your age">
+            </form>
+            <button type="submit">SUBMIT</button>
+        </div>
+        <div class="myCanvas">
+                <canvas id=”newCanvas” width=”250” height=”150” style="border:2px solid red"></canvas>
+        </div>
+        <div class="mySVG">
+            <svg width="200" height="200">
+                <circle cx="100" cy="100" r="80" stroke="red" stroke-width="4" fill="cyan" />
+            </svg>    
+        </div>
+    </section>
+    <script language="javascript">
+        var data = document.getElementById("newCanvas");
+        var newLine = data.getContext("2d");
+        newLine.moveTo(0, 0);
+        newLine.lineTo(250, 150);
+        newLine.stroke();
+    </script>
+</body>
+</html>
