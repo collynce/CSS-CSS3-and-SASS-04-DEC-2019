@@ -1,88 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Example</title>
-</head>
-<body>
-    <main>
-        <h1>My first website</h1>
-        <p class="firstParagraphh">Hello, Welcome to my website...</p>
-        <div class="myImage">
-            <img src="https://picsum.photos/200/300" alt="Random Image">
+    <link rel="stylesheet" href="styles/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container_navbarmenu">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="container_heroimage">
+        <button>WELCOME</button>
+      </div>
+      <hr />
+      <div class="container_body">
+        <div class="container_tasks">
+          <h2>Today's Tasks</h2>
+          <ul>
+            <li>HTML</li>
+            <li>Installing Vagrant</li>
+            <li>Configuring NGINX</li>
+            <li>Running Virtualhost</li>
+          </ul>
         </div>
-    </main>
-    <section class="container">
-        <div class="myTable">
-            <table>
-                <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Location</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Michael Kamau</td>
-                    <td>20</td>
-                    <td>Nairobi</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Cetric Okola</td>
-                    <td>24</td>
-                    <td>Kisumu</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Margaret Mwaura</td>
-                    <td>23</td>
-                    <td>Thika</td>
-                </tr>
-            </table>
+        <hr />
+        <div class="container_table">
+          <h2>Team Members</h2>
+          <table>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Location</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Michael Kamau</td>
+              <td>20</td>
+              <td>Nairobi</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Cetric Okola</td>
+              <td>24</td>
+              <td>Kisumu</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Margaret Mwaura</td>
+              <td>23</td>
+              <td>Thika</td>
+            </tr>
+          </table>
         </div>
-        <div class="itemList">
-            <h2>Today's Tasks</h2>
-            <ul>
-                <li>HTML</li>
-                <li>Installing Vagrant</li>
-                <li>Configuring NGINX</li>
-                <li>Running Virtualhost</li>
-            </ul>
-        </div>
-        <div class="myForm">
-            <form>
-                <input type="text" placeholder="Enter your name">
-                <br>
-                <input type="text" placeholder="Enter your age">
-            </form>
-            <button type="submit">SUBMIT</button>
-        </div>
-        <div class="myCanvas">
-                <canvas id=”newCanvas” width=”250” height=”150” style="border:2px solid red"></canvas>
-        </div>
-        <div class="mySVG">
-            <svg width="200" height="200">
-                <circle cx="100" cy="100" r="80" stroke="red" stroke-width="4" fill="cyan" />
-            </svg>    
-        </div>
-        <div>
+        <hr />
+        <div class="container_media">
+          <h2>Media Contemt</h2>
+          <div class="container_video">
             <video width="400" height="250" controls>
-                <source src="image.mp4" type="video/mp4">
+              <source src="image.mp4" type="video/mp4" />
             </video>
-        </div>
-        <div>
+          </div>
+          <div class="container_audio">
             <audio controls>
-                <source src="audio.mp3" type="audio/mpeg">
+              <source src="audio.mp3" type="audio/mpeg" />
             </audio>
+          </div>
         </div>
-        <div>
-            <object data="https://picsum.photos/200/350"></object>
+        <hr />
+        <div class="container_form">
+          <h2>Forms</h2>
+          <form action="">
+            <input type="text" placeholder="Enter your name" />
+            <input type="number" min="0" placeholder="Enter your age" />
+            <button>SUBMIT</button>
+          </form>
         </div>
-        
-    </section>
-   
-</body>
+      </div>
+      <div class="container_footer">
+        Copyright 2019
+      </div>
+    </div>
+  </body>
 </html>

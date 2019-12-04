@@ -1,0 +1,28 @@
+.container_navbarmenu {
+  ul {
+    background-color: darken($primaryColor, 1);
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 26px;
+    overflow: hidden;
+
+    li {
+      text-transform: uppercase;
+      display: inline;
+      padding: inherit;
+
+      a {
+        text-decoration: none;
+        text-align: center;
+        padding: 15px 13px;
+        color: #fff;
+        display: inline;
+      }
+      &:hover {
+        background-color: darken($primaryColor, 5);
+        @include easeOut;
+      }
+    }
+  }
+}
