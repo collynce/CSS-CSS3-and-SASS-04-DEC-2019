@@ -1,3 +1,7 @@
+.container_navbarmenu {
+  width: 100%;
+  margin: 0;
+}
 .container_navbarmenu ul {
   background-color: #414141;
   text-align: right;
@@ -20,7 +24,7 @@
 }
 .container_navbarmenu ul li:hover {
   background-color: #0ebbd3;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .container_footer {
@@ -31,6 +35,61 @@
 .container_footer ul li {
   list-style-type: none;
   display: inline;
+}
+
+.container_bio {
+  background: #373737;
+  padding: 0 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+.container_bio h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.container_bio p {
+  text-align: center;
+  padding: 15px;
+}
+.container_bio div {
+  padding: 20px 0;
+}
+.container_bio div img {
+  border-radius: 50%;
+  border: #0fcce6 2.5px solid;
+}
+.container_bio div img:hover {
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  -webkit-transition: all 0.5s cubic-bezier(1, 0, 1, 0.5);
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0.5);
+}
+.container_projects {
+  padding: 15px;
+  margin: 20px 0;
+}
+.container_projects h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.container_projects ul {
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+.container_projects ul h3 {
+  padding: 10px;
+  border-radius: 5px;
+  background: #585858;
+}
+.container_projects ul li {
+  list-style-type: none;
+  background: #444444;
+  margin: 20px 0;
+  padding: 30px;
+  text-align: center;
+  display: inline-block;
 }
 
 body {
@@ -44,12 +103,21 @@ hr {
   border: 1px solid #444444;
 }
 
+.container_form, .container_media, .container_table, .container_heroimage, .container_tasks, .container_bio, .container_projects, .container_projects ul li {
+  border-radius: 3.5px;
+  box-shadow: 0 3.5px 8px 0 #161616;
+}
+
 .container_tasks {
   background-color: #414141;
   height: 350px;
   padding: 8px;
   margin: 30px 0;
   text-align: justify;
+}
+.container_tasks:hover {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 3.5px 8px 0 #494949;
 }
 .container_tasks h2 {
   text-transform: uppercase;
@@ -72,9 +140,13 @@ hr {
   background-size: cover;
   background-attachment: fixed;
   height: 560px;
-  padding: 8px;
+  padding: 10px;
   margin: 30px 0;
   text-align: center;
+}
+.container_heroimage:hover {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 3.5px 8px 0 #494949;
 }
 .container_heroimage button {
   padding: 25px;
@@ -87,16 +159,19 @@ hr {
   font-size: 20px;
 }
 .container_heroimage button:hover {
-  transition: all 0.6s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background: #0fcce6;
 }
 .container_table {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #414141;
   height: 320px;
   padding: 20px;
   margin: 30px 0;
   text-align: justify;
+}
+.container_table:hover {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 3.5px 8px 0 #494949;
 }
 .container_table h2 {
   text-transform: uppercase;
@@ -119,20 +194,23 @@ hr {
 .container_table table tr:nth-child(even) {
   background-color: #5e5e5e;
 }
-.container_media {
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+.container_media:hover {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 3.5px 8px 0 #494949;
 }
 .container_media ul li {
   list-style: none;
   display: inline;
 }
 .container_media h2 {
+  padding: 20px 0;
   text-transform: uppercase;
   text-align: center;
 }
 .container_media div {
   display: inline-flex;
   background-color: #414141;
+  border-radius: 4.5px;
   width: 88%;
   margin: 50px;
 }
@@ -148,6 +226,10 @@ hr {
   padding: 20px;
   display: block;
   margin: 20px 0;
+}
+.container_form:hover {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 3.5px 8px 0 #494949;
 }
 .container_form h2 {
   text-transform: uppercase;
@@ -176,7 +258,7 @@ hr {
   font-size: 15px;
 }
 .container_form form button:hover {
-  transition: all 0.6s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background: inherit;
   border: #0088f7 2.5px solid;
 }

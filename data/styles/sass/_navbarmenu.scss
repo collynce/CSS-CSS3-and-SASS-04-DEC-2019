@@ -1,4 +1,7 @@
 .container_navbarmenu {
+  // position: fixed;
+  width: 100%;
+  margin: 0;
   ul {
     background-color: darken($primaryColor, 1);
     text-align: right;
