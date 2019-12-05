@@ -50,14 +50,14 @@ hr {
       background: inherit;
       width: 200px;
       margin: 220px 0;
-      border: rgb(4, 196, 180) 2.5px solid;
+      border: $secondaryColor 2.5px solid;
       border-radius: 10px;
       color: white;
       font-size: 20px;
 
       &:hover {
         @include easeOut;
-        background: rgb(4, 196, 180);
+        background: $secondaryColor;
       }
     }
   }
@@ -117,14 +117,13 @@ hr {
       margin: 50px;
       video {
         //margin:50px 350px;
-        width:100%;
+        width: 100%;
         height: auto;
       }
       audio {
-        margin:50px 400px;
+        margin: 50px 400px;
       }
     }
-
   }
   &_form {
     background-color: darken($primaryColor, 2);
@@ -150,17 +149,18 @@ hr {
       }
       button {
         padding: 10px;
-        background: inherit;
+        background: rgb(0, 136, 247);
         margin: 10px 40%;
         width: 200px;
+        border-radius: 5px;
         border: rgb(0, 136, 247) 2.5px solid;
-        border-radius: 8px;
         color: #fff;
         font-size: 15px;
 
         &:hover {
           @include easeOut;
-          background: rgb(0, 136, 247);
+          background: inherit;
+          border: rgb(0, 136, 247) 2.5px solid;
         }
       }
     }

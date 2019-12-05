@@ -20,7 +20,7 @@
         display: inline;
       }
       &:hover {
-        background-color: darken($primaryColor, 5);
+        background-color: darken($secondaryColor, 4);
         @include easeOut;
       }
     }
