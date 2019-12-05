@@ -97,9 +97,14 @@ hr {
   }
   &_media {
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 5px 50px;
-    height: 420px;
-    margin: 30px 0;
+    //padding: 5px 80px;
+
+    //width: 100%;
+    //margin: 30px 0;
+    ul li {
+      list-style: none;
+      display: inline;
+    }
 
     h2 {
       text-transform: uppercase;
@@ -107,18 +112,19 @@ hr {
     }
     div {
       display: inline-flex;
-      margin: 20px;
-      padding: 20px;
       background-color: darken($primaryColor, 1);
+      width: 88%;
+      margin: 50px;
+      video {
+        //margin:50px 350px;
+        width:100%;
+        height: auto;
+      }
+      audio {
+        margin:50px 400px;
+      }
     }
-    .container_video {
-      padding: 30px;
-      margin: 0;
-    }
-    .container_audio {
-      padding: 30px;
-      margin: 0px 30px;
-    }
+
   }
   &_form {
     background-color: darken($primaryColor, 2);

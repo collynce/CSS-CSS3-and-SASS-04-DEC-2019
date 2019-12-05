@@ -121,9 +121,10 @@ hr {
 }
 .container_media {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 5px 50px;
-  height: 420px;
-  margin: 30px 0;
+}
+.container_media ul li {
+  list-style: none;
+  display: inline;
 }
 .container_media h2 {
   text-transform: uppercase;
@@ -131,17 +132,16 @@ hr {
 }
 .container_media div {
   display: inline-flex;
-  margin: 20px;
-  padding: 20px;
   background-color: #414141;
+  width: 88%;
+  margin: 50px;
 }
-.container_media .container_video {
-  padding: 30px;
-  margin: 0;
+.container_media div video {
+  width: 100%;
+  height: auto;
 }
-.container_media .container_audio {
-  padding: 30px;
-  margin: 0px 30px;
+.container_media div audio {
+  margin: 50px 400px;
 }
 .container_form {
   background-color: #3f3f3f;
